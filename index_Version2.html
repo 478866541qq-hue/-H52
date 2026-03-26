@@ -1,102 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>威廉·莎士比亚生平简介</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap');
-  </style>
+    <title>Shakespeare Quotes</title>
 </head>
 <body>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- 封面 -->
-      <div class="swiper-slide cover">
-        <img src="shakespeare.jpg" alt="莎士比亚头像" class="cover-img"/>
-        <h1>威廉·莎士比亚<br>生平简介</h1>
-        <button class="start-btn" onclick="swiper.slideNext()">开启之旅</button>
-      </div>
-      <!-- 童年与成长 -->
-      <div class="swiper-slide">
-        <h2>童年与成长</h2>
-        <p>
-          1564年4月23日，威廉·莎士比亚出生于英国斯特拉特福镇。<br><br>
-          父亲是手套商约翰·莎士比亚，母亲为玛丽·阿登。<br><br>
-          莎士比亚从小接受教育，展现出早期的文学兴趣。18岁时与安妮·海瑟薇结婚。
-        </p>
-      </div>
-      <!-- 剧作家之路 -->
-      <div class="swiper-slide">
-        <h2>剧作家之路</h2>
-        <p>
-          莎士比亚青年时离开家乡，前往伦敦谋生。<br><br>
-          他先后成为演员和剧作家，加入著名的"国王剧团"。<br><br>
-          1590年代后期开始创作大量被后世传颂的戏剧。
-        </p>
-      </div>
-      <!-- 主要成就 -->
-      <div class="swiper-slide">
-        <h2>主要成就</h2>
-        <ul>
-          <li>四大悲剧：《哈姆雷特》《奥赛罗》《李尔王》《麦克白》</li>
-          <li>十四行诗共计154首</li>
-          <li>众多喜剧、历史剧影响深远</li>
-          <li>被誉为“人类文学的太阳”</li>
-        </ul>
-      </div>
-      <!-- 晚年与影响 -->
-      <div class="swiper-slide">
-        <h2>晚年与影响</h2>
-        <p>
-          莎士比亚晚年回到斯特拉特福，定居于庄园。<br><br>
-          1616年4月23日逝世，安葬于故乡教堂。<br><br>
-          他的剧作及诗歌广泛流传，深刻影响了世界文学和英语发展。
-        </p>
-      </div>
-      <!-- 趣味互动 -->
-      <div class="swiper-slide">
-        <h2>名言金句</h2>
+    <h1>Famous Shakespeare Quotes</h1>
+    <section>
         <blockquote>
-          “To be, or not to be, that is the question.”<br>
-          —— Hamlet
+            "To be, or not to be: that is the question."
         </blockquote>
         <blockquote>
-          “All the world’s a stage, and all the men and women merely players.”<br>
-          —— As You Like It
+            "All the world’s a stage, and all the men and women merely players."
         </blockquote>
-        <button class="start-btn" onclick="swiper.slideNext()">继续</button>
-      </div>
-      <!-- 结尾页 -->
-      <div class="swiper-slide">
-        <h2>致敬莎士比亚</h2>
-        <p>
-          莎士比亚用笔触塑造了无数鲜活的人物，点亮了世界文学的星空。<br><br>
-          百年之后，他的作品依然在舞台上熠熠生辉，启发着无数读者和创作者。<br><br>
-          <span style="font-size:1rem;color:#666;">——感谢观看！</span>
-        </p>
-        <button class="share-btn" onclick="alert('可长按页面保存分享')">分享本页面</button>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper', {
-      direction: 'horizontal',
-      loop: false,
-      pagination: { el: '.swiper-pagination' },
-      mousewheel: true,
-      keyboard: true,
-    });
-    // 禁止滑动回到封面
-    swiper.on('slideChange', function() {
-      if (swiper.activeIndex === 0 && swiper.previousIndex > 0) {
-        swiper.slideTo(1);
-      }
-    });
-  </script>
+        <blockquote>
+            "The course of true love never did run smooth."
+        </blockquote>
+        <blockquote>
+            "This above all: to thine own self be true."
+        </blockquote>
+        <blockquote>
+            "Some are born great, some achieve greatness, and others have greatness thrust upon them."
+        </blockquote>
+    </section>
 </body>
 </html>
